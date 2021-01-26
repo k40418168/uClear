@@ -1,47 +1,53 @@
-*{
-    margin:0;
-    padding:0;
-    list-style:none;
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
+
+.wrap {
+    background: linear-gradient(rgb(121, 205, 224), rgb(245, 244, 244));
+    width: 100%;
+    padding: 32px 12px 20px 12px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.Functionpage {
+    position: absolute;
+    width: 300px;
+    height: 547px;
+    padding: 16px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 24px 0px 5%;
+    position: relative;
+    border-radius: 10px;
+}
+
 .navbar {
     height: 87px;
     width: 100%;
     padding-bottom: 20px;
 }
 
-.wrap {
-    background:linear-gradient( rgb(121, 205, 224), rgb(245,244,244));
-    width: 100%;
-    padding: 32px 12px 20px 12px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    
-}
-.user-form{
+.user-form {
     width: 100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
-.Functionpage {
-    width: 300px;
-    height: 547px;
-    padding: 16px;
-    background-color: rgb(255, 255, 255);
-    margin: 0px 24px 0px 5% ;
-    position: relative;
-    border-radius: 10px;
-}
-.username{
+
+.username {
     text-align: center;
 }
-.username h3{
+
+.username h3 {
     font-size: 12px;
     color: #3e4459;
 }
-.user-infro{
+
+.user-infro {
     display: flex;
     flex-direction: row;
     border: 1px solid #EEEEEE;
@@ -51,290 +57,350 @@
     margin: 0px 0px 24px;
     padding: 10px 22px;
 }
-.user-item{
+
+.user-item {
     padding: 10px;
     text-align: center;
 }
-.user-item-infro{
+
+.user-item-infro {
     color: #3e4459;
     font-size: 14px;
-    
 }
-.user-item-number{
+
+.user-item-number {
     font-size: 20px;
 }
-p{
+
+p {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
-.Functionpage-btnblock{
+
+.Functionpage-btnblock {
     display: flex;
     flex-direction: column;
 }
-.Functionpage-btn{
+
+.Functionpage-btn {
     width: 268px;
     margin: 0px 0px 12px;
     padding: 10px 12px;
     border: 1px solid #eeeeee;
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     border-radius: 10px;
     height: 46px;
 }
-.SignOut{
+
+.SignOut {
     position: absolute;
     bottom: 10px;
     right: 20px;
 }
-.Card{
-    width: 90%;
+@media screen and (max-width:767px){
+    .menu-control{
+        display:block;
+        width: 36px;
+        height: 36px;
+        background-color: #333;
+        order: -1;
+        margin-right: 10px;
+        position: absolute;
+        top: 0px;
+    }
 }
-.Card-Title{
-    width: 100%;
-    height: 84px;
-    margin: 30px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+@media screen and (min-width: 1200px) {
+    .Card {
+        width: 90%;
+    }
 
-.Card-Title h2{
-    font-size: 24px;
-}
-.Function-Card-Body{
-    width: 100%;
-    height: 329px;
-    background-color: white;
-    padding: 40px 100px;
-    border-radius: 10px;
-}
-.user_infro{
-    display: flex;
-    flex-direction: row;
-    
-}
-.user_infro-item{
-    display: flex;
-    flex-direction: row;
-    padding: 12px 0px;
-    border-bottom: 1px solid #eeeeee;
-}
-.user_infro-item-text{
-    margin: 0px 16px 0px 0px;
-    width: 70px;
-}
-.user_infro-item p{
-    font-size: 14px;
-}
-.user_infro-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-.user_infro-btn .btn{
-    margin-left: 20px;
-}
-#btn-model-blue{
-    border: 1px solid lightblue;
-    color: rgb(0,123,255) ;
-}
-#btn-model-blue:hover{
-    background-color: rgb(0,123,255);
-    color: white;
-}
-.footer{
-    width: 100%;
-    height: 345px;
-    background-color: violet;
-}
+    .Card-Title {
+        width: 100%;
+        height: 84px;
+        margin: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
-.Card-Title-btn .btn-text{
-    display: flex;
-    flex-direction: row;
-}
-.Card-Body-img{
-    width: 80px;
-    height: 80px;
-    margin-bottom: 20px;
-}
-.Card-Body-img img{
-    width: 100%;
-    height: 100%;
-}
-.Order-Function-Card .Function-Card-Body{
-    
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.Order-Function-Card .Card-Body-text{
-    margin-bottom: 20px;
-    text-align: center;
-}
-.Card-Title .Card-Title-btn-block{
-    margin-bottom: 20px;
-    margin-top: 20px;
-    box-sizing: border-box;
-}
-.Card-Title-btn-block .Card-Title-btn{
-    height: 35px;
-    /*background-color: white;
+    .Card-Title h2 {
+        font-size: 24px;
+    }
+
+    .Function-Card-Body {
+        width: 100%;
+        height: 329px;
+        background-color: white;
+        padding: 40px 100px;
+        border-radius: 10px;
+    }
+
+    .user_infro {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .user_infro-item {
+        display: flex;
+        flex-direction: row;
+        padding: 12px 0px;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    .user_infro-item-text {
+        margin: 0px 16px 0px 0px;
+        width: 70px;
+    }
+
+    .user_infro-item p {
+        font-size: 14px;
+    }
+
+    .user_infro-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .user_infro-btn .btn {
+        margin-left: 20px;
+    }
+
+    #btn-model-blue {
+        border: 1px solid lightblue;
+        color: rgb(0, 123, 255);
+    }
+
+    #btn-model-blue:hover {
+        background-color: rgb(0, 123, 255);
+        color: white;
+    }
+
+    .footer {
+        width: 100%;
+        height: 345px;
+        background-color: violet;
+    }
+
+    .Card-Title-btn .btn-text {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Card-Body-img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .Card-Body-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Order-Function-Card .Function-Card-Body {
+
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Order-Function-Card .Card-Body-text {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .Card-Title .Card-Title-btn-block {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .Card-Title-btn-block .Card-Title-btn {
+        height: 35px;
+        /*background-color: white;
     color: rgb(54,187,217);*/
-    border-radius: 20px;
-    font-size: 18px;
-    padding: 4px 16px;
-    margin: 0px 16px 0px 0px;
-    display: flex;
-    flex-direction: row;
-}
-.Card-Title-btn-block .Card-Title-btn .num{
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-    /* background-color: rgb(54,187,217); */
-    /* color: white; */
-    color: rgb(0,123,255);
-    background-color: #eeeeee;
-    margin: 3.5px 0px 3.5px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-}
-.Point-Function-Card-Body{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-.Point-Function-Card-Body .user-point{
-    width: 100%;
-    height: 51px;
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-}
-.user-point p{
-    margin-left: 50px;
-}
-.user-point button{
-    margin-right: 50px;
-}
-.Point-Function-Card .Function-Card-Footer{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.Storedvalue{
-    width: 150px;
-}
-.Function-Card-Footer .item{
-    margin: 5px;
-}
-.Credit-Card-Body{
-    width: 100%;
-    height: 375px;
-    background-color: white;
-    margin: auto;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.newCredit{
-    width: 300px;
-    height: 190px;
-    padding: 15px 20px;
-    border: 3px rgb(121, 205, 224);
-    border-style:dashed;
-    color: rgb(121, 205, 224);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.newCredit .radius{
-    margin-top: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    border: 2px solid rgb(121, 205, 224);
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.radius p{
-    margin-bottom: 13.5px;
-}
-.newCredit:hover{
-    color: rgb(54, 187, 217);
-}
-.Discount-Card-Body{
-    width: 100%;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    border-radius: 10px;
-}
-.Discount-Card-Body-txt{
-    width: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-}
-.Friends-Card-Body{
-    width: 100%;
-    height: 251px;
-    margin: auto;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 40px 60px;
-    color: #3E4459;
-}
-.intro-btn{
-    color: rgb(54, 187, 217);
-    margin-top: -5px;
-}
-.invit-title{
-    margin-bottom: 20px;
-    font-size: 16px;
-}
-.intro-btn:hover{
-    color: rgb(54, 187, 217);
-}
-.invit{
-    width: 100%;
-    text-align: center;
-    border:1px solid #eeeeee;
-    padding: 24px 0px;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.invite-txt{
-    margin-bottom: 8px;
-}
-.invite-code{
-    font-size: 14px;
-}
-.point-btn-block{
-    margin-left:35px;
+        border-radius: 20px;
+        font-size: 18px;
+        padding: 4px 16px;
+        margin: 0px 16px 0px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .Card-Title-btn-block .Card-Title-btn .num {
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        /* background-color: rgb(54,187,217); */
+        /* color: white; */
+        color: rgb(0, 123, 255);
+        background-color: #eeeeee;
+        margin: 3.5px 0px 3.5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .Point-Function-Card-Body {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .Point-Function-Card-Body .user-point {
+        width: 100%;
+        height: 51px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .user-point p {
+        margin-left: 50px;
+    }
+
+    .user-point button {
+        margin-right: 50px;
+    }
+
+    .Point-Function-Card .Function-Card-Footer {
+        width: 100%;
+        height: 500px;
+        background-color: white;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Storedvalue {
+        width: 150px;
+    }
+
+    .Function-Card-Footer .item {
+        margin: 5px;
+    }
+
+    .Credit-Card-Body {
+        width: 100%;
+        height: 375px;
+        background-color: white;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .newCredit {
+        width: 300px;
+        height: 190px;
+        padding: 15px 20px;
+        border: 3px rgb(121, 205, 224);
+        border-style: dashed;
+        color: rgb(121, 205, 224);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newCredit .radius {
+        margin-top: 20px;
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        border: 2px solid rgb(121, 205, 224);
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .radius p {
+        margin-bottom: 13.5px;
+    }
+
+    .newCredit:hover {
+        color: rgb(54, 187, 217);
+    }
+
+    .Discount-Card-Body {
+        width: 100%;
+        height: 600px;
+        background-color: rgb(255, 255, 255);
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .Discount-Card-Body-txt {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .Friends-Card-Body {
+        width: 100%;
+        height: 251px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 60px;
+        color: #3E4459;
+    }
+
+    .intro-btn {
+        color: rgb(54, 187, 217);
+        margin-top: -5px;
+    }
+
+    .invit-title {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .intro-btn:hover {
+        color: rgb(54, 187, 217);
+    }
+
+    .invit {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #eeeeee;
+        padding: 24px 0px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .invite-txt {
+        margin-bottom: 8px;
+    }
+
+    .invite-code {
+        font-size: 14px;
+    }
+
+    .point-btn-block {
+        margin-left: 35px;
+    }
 }
