@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient( #31c89b, rgb(245, 244, 244));
+    background-color: #31c89b;
+    position: relative;
+    margin-top: 65px;
+}
+.functionpage{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    position: fixed;
+    padding: 16px;
+    z-index: 1;
+}
+.functionpage.Fg-sm {
+    left: -300px;
+}
+.username{
+    text-align: center;
+}
+.user-infro{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #eeeeee;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.user-item{
+    text-align: center;
+}
+.user-item-number{
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.menu-control {
+    display: block;
+    width: 20px;
+    height: 36px;
+    background-color: #333;
+    order: -1;
+    margin-right: 10px;
+    position: absolute;
+    top: 250px;
+    left:300px;
+}
+.functionpage-btn{
+    width: 268px;
+    margin: 0px 0px 12px;
+    padding: 10px 12px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 46px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #31c89b;
+}
+.btn-signout{
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 30px;
+}
+.Card{
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+.col-12{
+    padding: 0px;
+}
+.page-title{
+    text-align: center;
+    margin: 30px 0px;
+}
+.page-body{
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.user_infro-item{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+    color: #3E4459;
+}
+.user_infro-btn{
+    display: flex;
+    justify-content: center;
+}
+.btn-password{
+    margin-right: 30px;
+}
+#btn-model-space{
+    border: 1px solid lightblue;
+    color: #31c89b;
+}
+#btn-model-space:hover {
+    background-color: #31c89b;
+    color: white;
+}
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+.user_infro-item-text{
+    width: 100px;
+    
+}
+.user_infro-item-label{
+    width: 250px;
+}
+.page-title-btn-block{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+.page-title-btn-block .nav{
+    display: flex;
+    justify-content: center;
+}
+.page-title-btn-block .page-title-btn {
+    margin: auto;
+    width: 150px;
+    height: 35px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    padding: 4px 16px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}

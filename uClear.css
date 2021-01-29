@@ -5,14 +5,17 @@
 }
 
 .wrap {
-    background: linear-gradient(rgb(121, 205, 224), rgb(245, 244, 244));
+    margin-top: 100px;
+    background: linear-gradient(#83eccd, rgb(245, 244, 244));
     width: 100%;
     padding: 32px 12px 20px 12px;
     display: flex;
     flex-direction: row;
     position: relative;
 }
-
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background-color: #31c89b;
+}
 .Functionpage {
     position: absolute;
     width: 300px;
@@ -99,6 +102,7 @@ p {
     bottom: 10px;
     right: 20px;
 }
+
 @media screen and (max-width:767px){
     .menu-control{
         display:block;
@@ -171,13 +175,13 @@ p {
         margin-left: 20px;
     }
 
-    #btn-model-blue {
+    #btn-model-space {
         border: 1px solid lightblue;
-        color: rgb(0, 123, 255);
+        color: #31c89b;
     }
 
-    #btn-model-blue:hover {
-        background-color: rgb(0, 123, 255);
+    #btn-model-space:hover {
+        background-color: #31c89b;
         color: white;
     }
 
@@ -204,7 +208,6 @@ p {
     }
 
     .Order-Function-Card .Function-Card-Body {
-
         margin-top: 20px;
         display: flex;
         flex-direction: column;
