@@ -1,271 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
     <title>uClear尋找你的清潔員</title>
-    <link rel="stylesheet" href="uClear-reset.css">
+    <link rel="stylesheet" href="uClear-reset.css" />
 </head>
 
 <body>
     <div class="wrap">
-        <div class="user-form">
-            <!-- 會員中心切換功能欄 -->
-            <div class="functionpage Fg-sm" id="Fg">
-                <div class="menu-control">
-                    <button onclick="display()"></button>
-                </div>
-                <div class="username">
-                    <p>Hi!小小兵您好!</p>
-                </div>
-                <div class="user-infro">
-                    <div class="user-item">
-                        <div class="order">
-                            <p class="user-item-number">0</p>
-                            <p class="user-item-infro">預約中</p>
-                        </div>
-                    </div>
-                    <div class="user-item">
-                        <div class="point">
-                            <p class="user-item-number">0</p>
-                            <p class="user-item-infro">我的G點</p>
-                        </div>
-                    </div>
-                    <div class="user-item">
-                        <div class="discount">
-                            <p class="user-item-number">0</p>
-                            <p class="user-item-infro">優惠卷</p>
-                        </div>
+        <!-- 會員中心切換功能欄 -->
+        <div class="functionpage" id="Fg">
+            <div class="menu-control">
+                <button onclick="display()">></button>
+            </div>
+            <div class="username">
+                <p>Hi!小小兵您好!</p>
+            </div>
+            <div class="user-infro">
+                <div class="user-item">
+                    <div class="user-item-txt">
+                        <p class="user-item-number">0</p>
+                        <p class="user-item-infro">預約中</p>
                     </div>
                 </div>
-                <!-- 功能列表 -->
-                <div class="row">
-                    <div class="col-3">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
-                            aria-orientation="vertical">
-                            <a class="btn functionpage-btn nav-link active" id="v-pills-infro-tab" data-toggle="pill"
-                                href="#v-pills-infro" role="tab" aria-controls="v-pills-infro"
-                                aria-selected="true">會員資料</a>
-
-                            <a class="btn functionpage-btn nav-link" id="v-pills-order-tab" data-toggle="pill"
-                                href="#v-pills-order" role="tab" aria-controls="v-pills-order"
-                                aria-selected="false">我的訂單</a>
-
-                            <a class="btn functionpage-btn nav-link" id="v-pills-point-tab" data-toggle="pill"
-                                href="#v-pills-point" role="tab" aria-controls="v-pills-messages"
-                                aria-selected="false">我的G點</a>
-
-                            <a class="btn functionpage-btn nav-link" id="v-pills-credit-tab" data-toggle="pill"
-                                href="#v-pills-credit" role="tab" aria-controls="v-pills-credit"
-                                aria-selected="false">我的信用卡</a>
-
-                            <a class="btn functionpage-btn nav-link" id="v-pills-discount-tab" data-toggle="pill"
-                                href="#v-pills-discount" role="tab" aria-controls="v-pills-discount"
-                                aria-selected="false">我的優惠卷</a>
-
-                            <a class="btn functionpage-btn nav-link" id="v-pills-friend-tab" data-toggle="pill"
-                                href="#v-pills-firend" role="tab" aria-controls="v-pills-firend"
-                                aria-selected="false">邀請好友 贈代碼</a>
-                        </div>
+                <div class="user-item">
+                    <div class="user-item-txt">
+                        <p class="user-item-number">0</p>
+                        <p class="user-item-infro">我的G點</p>
                     </div>
-                    <button class="btn btn-signout">登出</button>
+                </div>
+                <div class="user-item">
+                    <div class="user-item-txt">
+                        <p class="user-item-number">0</p>
+                        <p class="user-item-infro">優惠卷</p>
+                    </div>
                 </div>
             </div>
-            <!-- 會員資訊卡片 -->
-            <div class="col-12">
-                <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-infro" role="tabpanel"
-                        aria-labelledby="v-pills-infro-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>會員資料</h2>
-                            </div>
-                            <div class="page-body">
-                                <div class="user_infro-item">
-                                    <div class="user_infro-item-text">
-                                        <p>姓名</p>
-                                    </div>
-                                    <div class="user_infro-item-label">
-                                        <p>小小兵</p>
-                                    </div>
-                                </div>
-                                <div class="user_infro-item">
-                                    <div class="user_infro-item-text">
-                                        <p>手機號碼</p>
-                                    </div>
-                                    <div class="user_infro-item-label">
-                                        <p>0912345678</p>
-                                    </div>
-                                </div>
-                                <div class="user_infro-item">
-                                    <div class="user_infro-item-text">
-                                        <p>E-mail</p>
-                                    </div>
-                                    <div class="user_infro-item-label">
-                                        <p>a123456789@gmail.com</p>
-                                    </div>
-                                </div>
-                                <div class="user_infro-item">
-                                    <div class="user_infro-item-text">
-                                        <p>服務地址</p>
-                                    </div>
-                                    <div class="user_infro-item-label">
-                                        <p>台北市萬華區華中里萬大路400巷20弄100號</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user_infro-btn">
-                                <button class="btn btn-password" id="btn-model-space">修改密碼</button>
-                                <button class="btn btn-success">編輯會員資料</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>我的訂單</h2>
-                                <div class="page-title-btn-block">
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item btn page-title-btn " role="presentation">
-                                            <a class="nav-link active btn page-title-btn" id="pills-home-tab"
-                                                data-toggle="pill" href="#pills-home" role="tab"
-                                                aria-controls="pills-home" aria-selected="true">
-                                                預約中
-                                                <div class="num">
-                                                    0
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item btn page-title-btn " role="presentation">
-                                            <a class="nav-link btn page-title-btn" id="pills-profile-tab"
-                                                data-toggle="pill" href="#pills-profile" role="tab"
-                                                aria-controls="pills-profile" aria-selected="false">清潔計畫</a>
-                                        </li>
-                                        <li class="nav-item btn page-title-btn " role="presentation">
-                                            <a class="nav-link btn page-title-btn" id="pills-contact-tab"
-                                                data-toggle="pill" href="#pills-contact" role="tab"
-                                                aria-controls="pills-contact" aria-selected="false">已完成</a>
-                                        </li>
-                                        <li class="nav-item btn page-title-btn " role="presentation">
-                                            <a class="nav-link btn page-title-btn" id="pills-search-tab"
-                                                data-toggle="pill" href="#pills-search" role="tab"
-                                                aria-controls="pills-search" aria-selected="false">
-                                                媒合中
-                                                <div class="num">
-                                                    0
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="page-body">
-                                <!-- 預約中 -->
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                        aria-labelledby="pills-home-tab">
-                                        
-                                            <div class="Card-Body-img">
-                                                <img src="~/Image/MemberCenter/hour-clean.png" alt="">
-                                            </div>
-                                            <div class="Card-Body-text">
-                                                <p>您還沒有預約中的訂單唷</p>
-                                            </div>
-                                            <div class="Card-Body-btn">
-                                                <button class="btn" id="btn-model-space">查看全部服務</button>
-                                            </div>
-                                        
-                                    </div>
-                                    <!-- 清潔計畫 -->
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                        aria-labelledby="pills-profile-tab">
-                                            <div class="Card-Body-img">
-                                                <img src="~/Image/MemberCenter/icon-4week.svg" alt="">
-                                            </div>
-                                            <div class="Card-Body-text">
-                                                <p>您還沒加入清潔計劃唷<br>加入清潔計畫，每次享有9折優惠唷</p>
-                                            </div>
-                                            <div class="Card-Body-btn">
-                                                <button class="btn" id="btn-model-space">了解詳情</button>
-                                                <button class="btn btn-primary">我要加入</button>
-                                            </div>
-                                        </div>
-                                    <!-- 已完成 -->
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                        aria-labelledby="pills-contact-tab">
-                                            <div class="Card-Body-img">
-                                                <img src="~/Image/MemberCenter/hour-clean.png" alt="">
-                                            </div>
-                                            <div class="Card-Body-text">
-                                                <p>您還沒有已完成的訂單唷</p>
-                                            </div>
-                                            <div class="Card-Body-btn">
-                                                <button class="btn" id="btn-model-space">查看全部服務</button>
-                                            </div>
-                                        </div>
-                                    <!-- 媒合中 -->
-                                    <div class="tab-pane fade" id="pills-search" role="tabpanel"
-                                        aria-labelledby="pills-search-tab">
-                                            <div class="Card-Body-img">
-                                                <img src="~/Image/MemberCenter/hour-clean.png" alt="">
-                                            </div>
-                                            <div class="Card-Body-text">
-                                                <p>您還沒有媒合中的訂單唷</p>
-                                            </div>
-                                            <div class="Card-Body-btn">
-                                                <button class="btn" id="btn-model-space">查看全部服務</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-point" role="tabpanel" aria-labelledby="v-pills-point-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>我的J點</h2>
-                            </div>
-                            <div class="page-body">
+            <!-- 功能列表 -->
+            <div class="row">
+                <div class="col-3">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="btn functionpage-btn nav-link active" id="v-pills-infro-tab" data-toggle="pill"
+                            href="#v-pills-infro" role="tab" aria-controls="v-pills-infro" aria-selected="true">會員資料</a>
 
+                        <a class="btn functionpage-btn nav-link" id="v-pills-order-tab" data-toggle="pill"
+                            href="#v-pills-order" role="tab" aria-controls="v-pills-order"
+                            aria-selected="false">我的訂單</a>
+
+                        <a class="btn functionpage-btn nav-link" id="v-pills-point-tab" data-toggle="pill"
+                            href="#v-pills-point" role="tab" aria-controls="v-pills-messages"
+                            aria-selected="false">我的G點</a>
+
+                        <a class="btn functionpage-btn nav-link" id="v-pills-credit-tab" data-toggle="pill"
+                            href="#v-pills-credit" role="tab" aria-controls="v-pills-credit"
+                            aria-selected="false">我的信用卡</a>
+
+                        <a class="btn functionpage-btn nav-link" id="v-pills-discount-tab" data-toggle="pill"
+                            href="#v-pills-discount" role="tab" aria-controls="v-pills-discount"
+                            aria-selected="false">我的優惠卷</a>
+
+                        <a class="btn functionpage-btn nav-link" id="v-pills-friend-tab" data-toggle="pill"
+                            href="#v-pills-firend" role="tab" aria-controls="v-pills-firend" aria-selected="false">邀請好友
+                            贈代碼</a>
+                    </div>
+                </div>
+                <button class="btn btn-signout">登出</button>
+            </div>
+        </div>
+        <!-- 會員資訊卡片 -->
+        <div class="col-12 col-md-7">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-infro" role="tabpanel"
+                    aria-labelledby="v-pills-infro-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>會員資料</h2>
+                        </div>
+                        <div class="page-body">
+                            <div class="user_infro-item">
+                                <div class="user_infro-item-text">
+                                    <p>姓名</p>
+                                </div>
+                                <div class="user_infro-item-label">
+                                    <p>小小兵</p>
+                                </div>
+                            </div>
+                            <div class="user_infro-item">
+                                <div class="user_infro-item-text">
+                                    <p>手機號碼</p>
+                                </div>
+                                <div class="user_infro-item-label">
+                                    <p>0912345678</p>
+                                </div>
+                            </div>
+                            <div class="user_infro-item">
+                                <div class="user_infro-item-text">
+                                    <p>E-mail</p>
+                                </div>
+                                <div class="user_infro-item-label">
+                                    <p>a123456789@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="user_infro-item">
+                                <div class="user_infro-item-text">
+                                    <p>服務地址</p>
+                                </div>
+                                <div class="user_infro-item-label">
+                                    <p>台北市萬華區華中里萬大路400巷20弄100號</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user_infro-btn">
+                            <button class="btn btn-password" id="btn-model-space">
+                                修改密碼
+                            </button>
+                            <button class="btn btn-success">編輯會員資料</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-order" role="tabpanel" aria-labelledby="v-pills-order-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>我的訂單</h2>
+                            <div class="page-title-btn-block">
+                                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link active btn page-title-btn" id="pills-home-tab"
+                                            data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">
+                                            預約中
+                                            <div class="num">0</div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link btn page-title-btn" id="pills-profile-tab" data-toggle="pill"
+                                            href="#pills-profile" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">清潔計畫</a>
+                                    </li>
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link btn page-title-btn" id="pills-contact-tab" data-toggle="pill"
+                                            href="#pills-contact" role="tab" aria-controls="pills-contact"
+                                            aria-selected="false">已完成</a>
+                                    </li>
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link btn page-title-btn" id="pills-search-tab" data-toggle="pill"
+                                            href="#pills-search" role="tab" aria-controls="pills-search"
+                                            aria-selected="false">
+                                            媒合中
+                                            <div class="num">0</div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 預約中 -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab">
+                                <div class="page-body order-body">
+                                    <div class="page-body-img">
+                                        <!-- <img src="~/Image/MemberCenter/hour-clean.png" alt=""> -->
+                                        <img src="./hour-clean.png" alt="" />
+                                    </div>
+                                    <div class="page-body-text">
+                                        <p>您還沒有預約中的訂單唷</p>
+                                    </div>
+                                    <div class="page-body-btn">
+                                        <button class="btn" id="btn-model-space">
+                                            查看全部服務
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 清潔計畫 -->
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab">
+                                <div class="page-body order-body">
+                                    <div class="page-body-img">
+                                        <!-- <img src="~/Image/MemberCenter/icon-4week.svg" alt=""> -->
+                                        <img src="./icon-4week.svg" alt="" />
+                                    </div>
+                                    <div class="page-body-text">
+                                        <p>
+                                            您還沒加入清潔計劃唷<br />加入清潔計畫，每次享有9折優惠唷
+                                        </p>
+                                    </div>
+                                    <div class="page-body-btn">
+                                        <button class="btn" id="btn-model-space">了解詳情</button>
+                                        <button class="btn btn-success">我要加入</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 已完成 -->
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab">
+                                <div class="page-body order-body">
+                                    <div class="page-body-img">
+                                        <!-- <img src="~/Image/MemberCenter/hour-clean.png" alt=""> -->
+                                        <img src="./hour-clean.png" alt="" />
+                                    </div>
+                                    <div class="page-body-text">
+                                        <p>您還沒有已完成的訂單唷</p>
+                                    </div>
+                                    <div class="page-body-btn">
+                                        <button class="btn" id="btn-model-space">
+                                            查看全部服務
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 媒合中 -->
+                            <div class="tab-pane fade" id="pills-search" role="tabpanel"
+                                aria-labelledby="pills-search-tab">
+                                <div class="page-body order-body">
+                                    <div class="page-body-img">
+                                        <!-- <img src="~/Image/MemberCenter/hour-clean.png" alt=""> -->
+                                        <img src="./hour-clean.png" alt="" />
+                                    </div>
+                                    <div class="page-body-text">
+                                        <p>您還沒有媒合中的訂單唷</p>
+                                    </div>
+                                    <div class="page-body-btn">
+                                        <button class="btn" id="btn-model-space">
+                                            查看全部服務
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-credit" role="tabpanel" aria-labelledby="v-pills-credit-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>我的信用卡</h2>
+                </div>
+                <div class="tab-pane fade" id="v-pills-point" role="tabpanel" aria-labelledby="v-pills-point-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>我的G點</h2>
+                            <div class="page-title-point-btn-block">
+                                <ul class="nav nav-pills mb-3 point-btn-block" id="pills-tab" role="tablist">
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link active btn page-title-btn" id="pills-home-point-tab"
+                                            data-toggle="pill" href="#pills-home-point" role="tab"
+                                            aria-controls="pills-home-point" aria-selected="true">所有紀錄
+                                        </a>
+                                    </li>
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link btn page-title-btn" id="pills-profile-point-tab"
+                                            data-toggle="pill" href="#pills-profile-point" role="tab"
+                                            aria-controls="pills-profile-point" aria-selected="false">儲值紀錄</a>
+                                    </li>
+                                    <li class="nav-item btn page-title-btn" role="presentation">
+                                        <a class="nav-link btn page-title-btn" id="pills-contact-point-tab"
+                                            data-toggle="pill" href="#pills-contact-point" role="tab"
+                                            aria-controls="pills-contact-point" aria-selected="false">使用紀錄</a>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="page-body">
-
+                            <div class="user-point">
+                                <p>尚餘0點</p>
+                                <button class="btn btn-success">儲值</button>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="pills-tabContent">
+                            <!-- 所有紀錄 -->
+                            <div class="tab-pane fade show active" id="pills-home-point" role="tabpanel"
+                                aria-labelledby="pills-home-point-tab">
+                                <div class="page-body">
+                                    <div class="user-point-label item">您目前沒有G點喔!</div>
+                                    <div class="point-infro item">
+                                        全站服務皆可使用G點折抵<br />一點=NT 1元
+                                    </div>
+                                    <button class="btn Storedvalue item" id="btn-model-space">
+                                        馬上儲值去
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 儲值紀錄 -->
+                            <div class="tab-pane fade" id="pills-profile-point" role="tabpanel"
+                                aria-labelledby="pills-profile-point-tab">
+                                <div class="page-body">
+                                    <div class="user-point-label item">您目前沒有G點喔!</div>
+                                    <div class="point-infro item">
+                                        全站服務皆可使用G點折抵<br />一點=NT 1元
+                                    </div>
+                                    <button class="btn Storedvalue item" id="btn-model-space">
+                                        馬上儲值去
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- 使用紀錄 -->
+                            <div class="tab-pane fade" id="pills-contact-point" role="tabpanel"
+                                aria-labelledby="pills-contact-point-tab">
+                                <div class="page-body">
+                                    <div class="user-point-label item">您目前沒有G點喔!</div>
+                                    <div class="point-infro item">
+                                        全站服務皆可使用G點折抵<br />一點=NT 1元
+                                    </div>
+                                    <button class="btn Storedvalue item" id="btn-model-space">
+                                        馬上儲值去
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-discount" role="tabpanel"
-                        aria-labelledby="v-pills-discount-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>我的優惠卷</h2>
-                            </div>
-                            <div class="page-body">
-
+                </div>
+                <div class="tab-pane fade" id="v-pills-credit" role="tabpanel" aria-labelledby="v-pills-credit-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>我的信用卡</h2>
+                        </div>
+                        <div class="page-body credit-body">
+                            <button class="btn newCredit" onclick="display()">
+                                新增信用卡
+                                <div class="radius">
+                                    <p>+</p>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="v-pills-discount" role="tabpanel" aria-labelledby="v-pills-discount-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>我的優惠卷</h2>
+                        </div>
+                        <div class="page-body discount-body">
+                            <div class="page-body-text discount-txt">
+                                <p>您目前尚無優惠卷!</p>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="v-pills-firend" role="tabpanel" aria-labelledby="v-pills-firend-tab">
-                        <div class="Card">
-                            <div class="page-title">
-                                <h2>邀請好友 贈代碼</h2>
+                </div>
+                <div class="tab-pane fade" id="v-pills-firend" role="tabpanel" aria-labelledby="v-pills-firend-tab">
+                    <div class="Card">
+                        <div class="page-title">
+                            <h2>邀請好友</h2>
+                        </div>
+                        <div class="page-body friend-body">
+                            <div class="invit-title">
+                                <p>
+                                    每邀請一位好友註冊並使用<br />您就能獲得價值200元的折扣優惠。<button class="btn intro-btn">
+                                        了解詳情
+                                    </button>
+                                </p>
                             </div>
-                            <div class="page-body">
-
+                            <div class="invit">
+                                <div class="invite-txt">複製你的分享代碼給你好友</div>
+                                <div class="invite-btn-block">
+                                    <button class="btn invite-code" id="btn-model-space">
+                                        lk62m
+                                    </button>
+                                    <a href="#">
+                                        <img src="inviteicon.png" alt="" />
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -273,7 +367,6 @@
             </div>
         </div>
     </div>
-
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -293,6 +386,7 @@
                 fg.classList.remove("Fg-sm");
             } else {
                 fg.classList.add("Fg-sm");
+                
             }
             console.log(fg.classList);
         }

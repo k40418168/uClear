@@ -6,17 +6,16 @@
 .wrap{
     width: 100%;
     height: 100vh;
-    background: linear-gradient( #31c89b, rgb(245, 244, 244));
-    background-color: #31c89b;
+    background: linear-gradient( #bde9dc, rgb(245, 244, 244));
     position: relative;
     margin-top: 65px;
 }
 .functionpage{
     width: 300px;
-    height: 550px;
+    height: 597px;
     background-color: white;
     position: fixed;
-    padding: 16px;
+    padding: 5px 16px 16px 16px ;
     z-index: 1;
 }
 .functionpage.Fg-sm {
@@ -37,20 +36,29 @@
 .user-item{
     text-align: center;
 }
+.user-item-txt{
+    padding: 10px 0px;
+}
 .user-item-number{
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
-.menu-control {
+.row{
+    position: relative;
+}
+.menu-control button{
     display: block;
-    width: 20px;
-    height: 36px;
-    background-color: #333;
+    width: 15px;
+    height: 50px;
+    background-color: #31c89b;
     order: -1;
     margin-right: 10px;
     position: absolute;
     top: 250px;
-    left:300px;
+    left:295px;
+    border-radius: 5px;
+    border: none;
+    color: white;
 }
 .functionpage-btn{
     width: 268px;
@@ -70,7 +78,7 @@
     height: 20px;
     position: absolute;
     right: 0px;
-    bottom: 30px;
+    bottom: -15px;
 }
 .Card{
     width: 100%;
@@ -91,11 +99,17 @@
     margin: auto;
     margin-bottom: 30px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
 }
 .user_infro-item{
+    width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 30px;
+    padding: 25px 10px;
     border-bottom: 1px solid #eeeeee;
     font-size: 16px;
     color: #3E4459;
@@ -136,15 +150,183 @@ p{
     display: flex;
     justify-content: center;
 }
-.page-title-btn-block .page-title-btn {
+.page-title-btn-block .page-title-btn{
     margin: auto;
     width: 150px;
     height: 35px;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
     padding: 4px 16px;
     margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: row;
+}
+.nav-item{
+    padding: 0px;
+}
+.page-body-img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.page-body-img img{
+    width: 100%;
+    height: 100%;
+}
+.page-body-text{
+    width: 100%;
+}
+.num{
+    width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        /* background-color: rgb(54,187,217); */
+        /* color: white; */
+        color: rgb(0, 123, 255);
+        background-color: #eeeeee;
+        margin: 3.5px 0px 3.5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+}
+.user-point{
+    width: 95%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+
+    padding: 0px 30px
+}
+.page-title-point-btn-block{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.point-btn-block{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.page-title-point-btn-block .page-title-btn{
+    border-radius: 50px;
+    width: 100px;
+}
+.item{
+    text-align: center;
+    margin: 30px 0px;
+}
+.newCredit {
+    width: 250px;
+    height: 150px;
+    padding: 15px 20px;
+    border: 3px rgb(121, 205, 224);
+    border-style: dashed;
+    color: rgb(121, 205, 224);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.newCredit .radius {
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid rgb(121, 205, 224);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius p {
+    margin-bottom: 13.5px;
+}
+
+.newCredit:hover {
+    color: rgb(54, 187, 217);
+}
+.page-body-text{
+    text-align: center;
+}
+.credit-body{
+    padding: 40px 0px;
+}
+.order-body{
+    padding: 40px;
+}
+.discount-body{
+    padding: 80px;
+}
+.intro-btn {
+    color: #31c89b;
+    margin-top: -5px;
+}
+.invite-btn-block{
+    display: flex;
+    justify-content: center;
+}
+.friend-body{
+    padding: 24px;
+}
+.invit{
+    border: 1px solid #eeeeee;
+    padding: 8px 12%;
+}
+.invit-title{
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .functionpage{
+        height: 547px;
+        border-radius: 10px;
+        position: unset;
+        margin-right: 10px;
+    }
+    .wrap{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+    .functionpage.Fg-sm {
+        left: 0px;
+    }
+    .menu-control{
+        display: none;
+    }
+    
+    .page-title-btn-block .page-title-btn{
+        width: 100px;
+        font-size:14px;
+        padding: 4px 5px;
+        margin: auto;
+        justify-content: center;
+    }
+    .page-title-btn-block .nav-pills{
+        width: 100%;
+        padding: 0px;
+    }
+    .num{
+        margin: 1px 0px 0px 5px;
+    }
+    .page-title-point-btn-block{
+        width: 100%;
+    }
+    .newCredit{
+        width: 300px;
+        height: 190px;
+    }
+}
+@media screen and (min-width:1080px){
+    .wrap{
+        justify-content: center;
+    }
 }
