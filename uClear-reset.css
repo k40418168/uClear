@@ -329,4 +329,7 @@ p{
     .wrap{
         justify-content: center;
     }
+    .page-title-btn-block .page-title-btn,.page-title-point-btn-block .page-title-btn{
+        width: 150px;
+    }
 }
