@@ -67,7 +67,8 @@ h5{
 .btn-remove{
     width: 98%;
     height: 40px;
-    margin-left: 1%;
+    margin:5px auto;
+
 }
 .btn-success p{
     margin: auto;
@@ -126,6 +127,7 @@ h5{
     width: 150px;
     border-radius: 5px 5px 0px 0px ;
 }
+
 @media screen and (min-width:768px){
     .prod-detail-table_remove{
         padding: 0px 10px;

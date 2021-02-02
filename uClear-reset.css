@@ -8,7 +8,6 @@
     height: 100vh;
     background: linear-gradient( #bde9dc, rgb(245, 244, 244));
     position: relative;
-    margin-top: 65px;
 }
 .functionpage{
     width: 300px;
@@ -84,6 +83,7 @@
     width: 100%;
     height: 100%;
     padding-top: 10px;
+    
 }
 .col-12{
     padding: 0px;
@@ -91,6 +91,7 @@
 .page-title{
     text-align: center;
     margin: 30px 0px;
+    margin-top: 95px;
 }
 .page-body{
     width: 95%;
@@ -284,12 +285,126 @@ p{
 .invit-title{
     text-align: center;
 }
+.prod-form{
+    margin: 2px;
+}
+.prod-form-header{
+    width: 100%;
+    margin: auto;
+}
+
+.prod-form-header td{
+    border: 1px solid #cccccc;
+    background-color: #eeeeee;
+    text-align: center;
+    font-size: 16px;
+}
+.checkbox , .prod-detail-table_checkbox{
+    width: 4%;
+}
+.prod-detail-table_checkbox{
+    text-align: center;
+}
+.prod_dt{
+    width: 52%;
+}
+.prod-detail-table_prod_dt{
+    padding: 5px;
+    width: 34%;
+}
+.prod_price,.prod-detail-table_prod_price{
+    width: 14%;
+}
+.remove ,.prod-detail-table_remove{
+    width: 20%;
+}
+
+.prod-detail{
+    width: 100%;
+    margin: auto;
+}
+.prod-detail td{
+    font-size: 14px;
+}
+.prod-detail-table_prod_img{
+    width: 18%;
+    padding: 5px;
+}
+.prod-detail-table_prod_img img{
+    width: 100%;
+}
+h5{
+    font-size: 14px;
+}
+.prod-form-header td{
+    font-size: 16px;
+}
+.btn-remove{
+    width: 98%;
+    height: 40px;
+    margin:5px auto;
+
+}
+.btn-success p{
+    margin: auto;
+}
+.prod-detail-table_prod_price{
+    text-align: center;
+}
+.prod-list{
+    width: 90%;
+    margin: auto;
+}
+.prod-form-body{
+    height: 400px;
+    box-shadow: 0px 1px 2px #a4a4a4;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    margin-top: -1px;
+    overflow: auto;
+}
+.prod-detail-table_prod_dt p{
+    height: 80px;
+    overflow: auto;
+}
+.prod-detail tr{
+    border-bottom: 1px solid #eeeeee;
+}
+
+.prod-form-footer{
+    margin-top: -20px;
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 1px 2px #a4a4a4;
+}
+.prod-form-footer-txt{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+}
+.prod-from-footer-txt-num{
+    font-weight: bold;
+    color: brown;
+    font-size: 20px;
+}
+.btn-buy{
+    margin-left: 65%;
+}
+.favorites-body{
+    width: 95%;
+    padding: 0px;
+    margin: auto;
+}
 @media screen and (min-width:768px){
     .functionpage{
-        height: 547px;
+        height: 580px;
         border-radius: 10px;
         position: unset;
         margin-right: 10px;
+        margin-top: 30px;
     }
     .wrap{
         display: flex;
@@ -323,6 +438,10 @@ p{
     .newCredit{
         width: 300px;
         height: 190px;
+    }
+    .page-title{
+        text-align: center;
+        margin: 30px 0px;
     }
 }
 @media screen and (min-width:1080px){
