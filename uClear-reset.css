@@ -299,12 +299,8 @@ p{
     text-align: center;
     font-size: 16px;
 }
-.checkbox , .prod-detail-table_checkbox{
-    width: 4%;
-}
-.prod-detail-table_checkbox{
-    text-align: center;
-}
+
+
 .prod_dt{
     width: 52%;
 }
@@ -321,7 +317,7 @@ p{
 
 .prod-detail{
     width: 100%;
-    margin: auto;
+    margin-left: 10px;
 }
 .prod-detail td{
     font-size: 14px;
@@ -340,10 +336,9 @@ h5{
     font-size: 16px;
 }
 .btn-remove{
-    width: 98%;
+    width: 80%;
     height: 40px;
-    margin:5px auto;
-
+    margin:5px 10%;
 }
 .btn-success p{
     margin: auto;
@@ -398,6 +393,10 @@ h5{
     padding: 0px;
     margin: auto;
 }
+.btn-remove p{
+    font-size: 10px;
+}
+
 @media screen and (min-width:768px){
     .functionpage{
         height: 580px;
@@ -443,6 +442,14 @@ h5{
         text-align: center;
         margin: 30px 0px;
     }
+    .btn-remove p{
+        font-size: 10px;
+    }
+    .btn-remove{
+        width: 70%;
+        height: 40px;
+        margin:5px 15%;
+    }
 }
 @media screen and (min-width:1080px){
     .wrap{
@@ -450,5 +457,8 @@ h5{
     }
     .page-title-btn-block .page-title-btn,.page-title-point-btn-block .page-title-btn{
         width: 150px;
+    }
+    .btn-remove{
+        margin:5px 20%;
     }
 }
